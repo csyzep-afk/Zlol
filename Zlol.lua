@@ -3825,7 +3825,7 @@ function NeverLose:RegisiterItem(Frame: Frame , Signel)
 		end;
 
 		function UserFrameItem:SetProfile(Profile)
-			LogoImage.Image = Profile or "rbxasset://textures/ui/clb_robux_20@3x.png";
+			LogoImage.Image = Profile or "";
 		end;
 
 		function UserFrameItem:SetExpires(Exp)
@@ -6156,7 +6156,7 @@ function NeverLose:CreateNotification()
 		Config = NeverLose:ProcessParams(Config , {
 			Title = "Notification",
 			Content = "Hello World!",
-			Logo = NeverLose.GlobalLogo or "rbxasset://textures/ui/VerifiedBadgeNameIcon.png",
+			Logo = NeverLose.GlobalLogo or "",
 			Duration = 5,
 		});
 
